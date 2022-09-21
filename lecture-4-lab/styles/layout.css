@@ -1,0 +1,11 @@
+body {
+  padding: 20px;
+}
+
+.cell {
+  width: 200px;
+  height: 100px;
+  background-color: rgb(240, 149, 29, 0.4);
+  padding: 25px;
+  border: 2px solid rgb(240, 149, 29, 1);
+}

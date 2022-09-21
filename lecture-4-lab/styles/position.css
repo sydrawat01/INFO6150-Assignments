@@ -1,0 +1,50 @@
+@import url('./layout.css');
+
+.container {
+  border: 1px solid black;
+  margin: 300px;
+  position: relative;
+  height: 1000px;
+}
+
+.static {
+  position: static;
+}
+
+/* Relative to normal flow of the document */
+.relative {
+  position: relative;
+  top: 25px;
+  left: 25px;
+  background-color: aqua;
+  z-index: 1;
+}
+
+/*
+  * Detached from the normal flow of the document,
+    unless top & left properties are defined
+  * Detached from the viewport
+  * If none of the ancestors have the absolute property,
+  the element gets detached from the viewport.
+*/
+.absolute {
+  position: absolute;
+  top: 10px;
+  left: 300px;
+}
+
+/*
+  * Detaches from the viewport,
+  even if the ancestor is positioned relative!
+*/
+.fixed {
+  position: fixed;
+  top: 10px;
+  left: 10px;
+}
+
+.sticky {
+  position: sticky;
+  top: 10px;
+  left: 10px;
+}

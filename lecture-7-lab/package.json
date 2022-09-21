@@ -1,0 +1,31 @@
+{
+  "name": "lecture-7-lab-sydrawat01",
+  "version": "1.0.0",
+  "description": "Fetch-Webpack",
+  "main": "main.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/neu-mis-info6150-spring-2022/lecture-7-lab-sydrawat01.git"
+  },
+  "keywords": [
+    "Fetch",
+    "Webpack"
+  ],
+  "author": "Siddharth Rawat <siddharth.rawat94@gmail.com>",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/neu-mis-info6150-spring-2022/lecture-7-lab-sydrawat01/issues"
+  },
+  "homepage": "https://github.com/neu-mis-info6150-spring-2022/lecture-7-lab-sydrawat01#readme",
+  "devDependencies": {
+    "css-loader": "^6.6.0",
+    "sass": "^1.49.9",
+    "sass-loader": "^12.6.0",
+    "style-loader": "^3.3.1",
+    "webpack": "^5.69.1",
+    "webpack-cli": "^4.9.2"
+  }
+}

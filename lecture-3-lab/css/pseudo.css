@@ -1,0 +1,44 @@
+/*
+* Pseudo classes : https://developer.mozilla.org/en-US/docs/Web/CSS/Pseudo-classes
+* Psuedo elements: https://developer.mozilla.org/en-US/docs/Web/CSS/Pseudo-elements
+*/
+
+@import url('./layout.css');
+
+.section {
+  padding: 10px;
+  font-size: 20px;
+}
+.section:hover {
+  background-color: aquamarine;
+  cursor: pointer;
+}
+
+.section::first-letter {
+  font-size: 36px;
+}
+
+.section::selection {
+  background-color: yellow;
+}
+
+.section,
+p {
+  font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}
+
+.part {
+  width: 100px;
+  /* display: none;
+  display: inline;
+  display: block;
+  display: inline-block; */
+}
+
+.section {
+  width: 300px;
+  height: 300px;
+  /* overflow: scroll; */
+  /* overflow: hidden; */
+  overflow: auto;
+}

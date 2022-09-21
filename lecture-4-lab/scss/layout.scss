@@ -1,0 +1,34 @@
+body {
+  padding: 20px;
+}
+
+.grid-container {
+  @include border(black);
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-auto-rows: minmax(100px, 200px);
+  margin: 200px;
+
+  > .cell1 {
+    @extend .cell;
+    grid-row: 1;
+    grid-column: 1/3;
+    place-self: center;
+  }
+  > .cell2 {
+    @extend .cell;
+    grid-row: 2/4;
+    grid-column: 2;
+  }
+  > .cell3 {
+    @extend .cell;
+    grid-row: 3;
+    grid-column: 1/4;
+  }
+}
+
+.cell {
+  @include border($cell-border-color);
+  background-color: $cell-color;
+  padding: 25px;
+}
