@@ -1,0 +1,36 @@
+/*
+Attribute Selectors
+* [attr] (select all elements with the "attr" name)
+* [attr=val] (exact same value)
+* [attr~=val] (contains word seperated by space on both ends)
+* [attr^=val] (starts with)
+* [attr$= val] (ends with)
+* [attr*= val] (match anything)
+
+*/
+
+@import url('./layout.css');
+
+[data] {
+  padding: 10px !important;
+}
+
+[data='fruit'] {
+  font-weight: bold;
+}
+
+[data^='blue'] {
+  color: #ff0000;
+}
+
+[data$='fruit'] {
+  color: #0ea823;
+}
+
+[data*='berry'] {
+  font-size: 20px;
+}
+
+[data~='fruit'] {
+  text-align: center;
+}

@@ -1,0 +1,28 @@
+/*
+* Descendant selector (space)
+* Child selector (>)
+* Adjacent sibling selector (+)
+* Generic sibling selector (~)
+*/
+
+@import url('./layout.css');
+
+/* section .content {
+  color: rgb(50, 177, 12);
+} */
+
+section p {
+  color: rgb(243, 159, 57);
+}
+
+section > h1 {
+  color: rgb(187, 31, 31);
+}
+
+.article + p {
+  font-size: 24px;
+}
+
+.article ~ p {
+  text-align: center;
+}

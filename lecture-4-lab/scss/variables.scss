@@ -1,0 +1,5 @@
+// Innbuilt module to change the alpha value of rgba()
+@use 'sass:color';
+
+$cell-color: rgb(240, 149, 29, 0.4);
+$cell-border-color: color.adjust($cell-color, $alpha: 1);

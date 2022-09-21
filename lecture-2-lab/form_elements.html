@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Form Elements</title>
+  </head>
+  <body>
+    <h1>Form Elements</h1>
+    <form action="table.html" method="POST">
+      <fieldset>
+        <legend>Name</legend>
+        <label for="firstname">First Name:</label>
+        <input
+          type="text"
+          name="firstname"
+          id="firstname"
+          placeholder="Enter your first name"
+        />
+        <label for="lastname">Last Name:</label>
+        <input
+          type="text"
+          name="lastname"
+          id="lastname"
+          placeholder="Enter your last name"
+        />
+      </fieldset>
+      <fieldset>
+        <legend>Gender</legend>
+        <input type="radio" name="gender" id="male" value="male" />
+        <label for="male">Male</label>
+        <input type="radio" name="gender" id="female" value="female/>
+        <label for="female">Female</label>
+      </fieldset>
+      <fieldset>
+        <legend>Interests</legend>
+        <input
+          type="checkbox"
+          name="interests"
+          id="programmming"
+          value="programming"
+        />
+        <label for="programming">Programmming</label>
+        <input
+          type="checkbox"
+          name="interests"
+          id="swimming"
+          value="swimming"
+        />
+        <label for="swimmming">Swimmming</label>
+      </fieldset>
+      <fieldset>
+        <legend>Date of Birth</legend>
+        <label for="dob">Date of Birth:</label>
+        <input type="date" id="dob" name="dob" />
+      </fieldset>
+      <button type="submit">Submit</button>
+      <button type="reset">Clear</button>
+    </form>
+  </body>
+</html>
