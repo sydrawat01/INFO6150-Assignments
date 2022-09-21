@@ -1,0 +1,105 @@
+/* Footer container */
+footer {
+  display: flex;
+  // Using built-in math module
+  padding: 0 math.percentage(0.1);
+  justify-content: center;
+  align-items: center;
+  background-color: $app-green;
+  color: $app-white;
+
+  a {
+    color: $app-white;
+  }
+
+  /* Footer company section */
+  .footer-company {
+    // Using built-in math module
+    padding: 20px math.percentage(0.05);
+
+    .logo {
+      width: 250px;
+      height: 50px;
+    }
+
+    h2 {
+      margin-left: -100px;
+    }
+
+    p {
+      padding: 0;
+    }
+
+    picture a img {
+      width: 30px;
+      height: 30px;
+      margin: 0 6px;
+    }
+  }
+}
+
+/* Footer external links section 1  & 2*/
+.external-links-1,
+.external-links-2 {
+  // Using built-in math module
+  padding: 20px math.percentage(0.05);
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+
+  ul {
+    list-style-type: none;
+
+    li {
+      padding: 5px 0;
+      margin: 10px 0;
+      width: 150px;
+      display: flex;
+      flex-direction: row;
+      justify-content: space-between;
+      align-items: center;
+
+      .link-btn {
+        background-color: transparent;
+        color: $app-grey;
+        font-size: $default;
+        font-weight: $bold;
+      }
+    }
+  }
+}
+
+/* Footer external links section 2*/
+
+.external-links-2 ul li {
+  border-bottom: 1px solid $app-white;
+  padding: 5px 0;
+  margin: 15px 0;
+  width: 350px;
+}
+
+/* Footer copyright details */
+.footer-bottom {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  color: $app-white;
+  background-color: $app-dark-green;
+
+  .policy {
+    display: flex;
+    flex-direction: row;
+
+    p {
+      margin-left: 10px;
+    }
+  }
+}
+
+.footer-bottom a {
+  color: $app-white;
+}
+
+.footer-bottom a:hover {
+  color: $link-hover;
+}

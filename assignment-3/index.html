@@ -1,0 +1,739 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- Title for Web Page tab -->
+    <title>Greenline</title>
+    <!-- External Style Sheet -->
+    <link rel="stylesheet" href="./css/main.css" />
+  </head>
+  <body>
+    <!-- Header element for App Logo -->
+    <!-- Nav element for navigation links -->
+    <nav class="navigation">
+      <!-- Unordered list of nav items -->
+      <a href="#" target="_blank" rel="noopener noreferrer" class="logo">
+        <!-- Figure element for app logo -->
+        <figure class="logo">
+          <img
+            src="assets/images/Group 16059@2x.png"
+            alt="logo"
+            width="350px"
+            height="80px"
+          />
+        </figure>
+      </a>
+      <ul class="nav-links">
+        <li class="nav-items">
+          <!-- Figure element for GB flag -->
+          <figure>
+            <img
+              src="assets/images/gb@2x.png"
+              alt="gb-flag"
+              width="30"
+              height="20"
+            />
+            <select name="language" id="lang" required>
+              <option value="US">EN/USD</option>
+              <option value="UK">EN/GBP</option>
+            </select>
+          </figure>
+        </li>
+        <!-- Navigation Links -->
+        <li class="nav-items"><a href="#" target="_blank">Business</a></li>
+        <li class="nav-items"><a href="#" target="_blank">Help</a></li>
+        <li class="nav-items"><a href="#" target="_blank">Register</a></li>
+        <!-- Button for Sign In nav link -->
+        <li class="nav-items"><button type="button">Sign In</button></li>
+      </ul>
+    </nav>
+    <!-- Seperate section for various drop down menus in the navbar -->
+    <div class="bottomnav">
+      <section>
+        <select name="uk-trains" id="uk-trains">
+          <option value="uk-trains">UK Trains</option>
+          <option value="lorem">Lorem</option>
+          <option value="lorem">Lorem</option>
+          <option value="lorem">Lorem</option>
+        </select>
+        <select name="eu-trains" id="eu-trains">
+          <option value="eu-trains">European Trains</option>
+          <option value="lorem">Lorem</option>
+          <option value="lorem">Lorem</option>
+          <option value="lorem">Lorem</option>
+        </select>
+        <select name="companies" id="companies">
+          <option value="train-companies">Train Companies</option>
+          <option value="lorem">Lorem</option>
+          <option value="lorem">Lorem</option>
+          <option value="lorem">Lorem</option>
+        </select>
+        <select name="pop-journeys" id="pop-journeys">
+          <option value="pop-journeys">Popular Journeys</option>
+          <option value="lorem">Lorem</option>
+          <option value="lorem">Lorem</option>
+          <option value="lorem">Lorem</option>
+        </select>
+      </section>
+    </div>
+    <section class="hero-element">
+      <!-- Figure element for main hero image -->
+      <figure class="hero">
+        <img
+          class="base-1"
+          src="./assets/images/nick-page-1@2x.png"
+          alt="hero-base-img"
+          width="800px"
+          height="500px"
+        />
+        <!-- More images that will overlay each other via CSS -->
+        <img
+          class="base-2"
+          src="./assets/images/nick-page-4iZrQRh5gb4-unsplash@2x.png"
+          alt="hero-base-img-2"
+          width="800px"
+          height="500px"
+        />
+        <img
+          class="base-3"
+          src="./assets/images/trian_PNG-1@2x.png"
+          alt="hero-train"
+          width="450px"
+          height="250px"
+        />
+        <!-- Text to overlap image -->
+        <div class="hero-text-overlay">
+          <h2>Explore Europe effortlessly by</h2>
+          <h2>train and bus</h2>
+          <h4>Save 61% on average when you book in advance<sup>*</sup></h4>
+          <button type="button">Learn More</button>
+        </div>
+      </figure>
+      <div class="aside-form">
+        <!-- Form 1 for trip details with form validations -->
+        <form action="greenline.html" method="POST" class="main-form">
+          <fieldset>
+            <label for="input">Input</label>
+            <input
+              type="text"
+              name="input"
+              id="input"
+              placeholder="placeholder"
+              required
+            />
+            <button type="button" class="switch">-><-</button>
+            <label for="to">To</label>
+            <input
+              type="text"
+              name="to"
+              id="to"
+              placeholder="placeholder"
+              required
+            />
+            <br />
+            <input type="checkbox" name="check" id="check" value="via/avoid" />
+            <label for="check">Via / Avoid</label>
+            <select name="avoid" id="avoid" required>
+              <option value="avoid">Avoid</option>
+              <option value="avoid">Via</option>
+            </select>
+            <input
+              class="station-input"
+              type="text"
+              name="station"
+              id="station"
+              placeholder="Enter station..."
+              required
+            />
+            <br />
+          </fieldset>
+          <!-- Tab Links for Form element -->
+          <fieldset>
+            <div class="tab-btns">
+              <!-- Buttons for tab links that will be styled to look like tabs with CSS -->
+              <button type="button">One Way</button>
+              <button type="button" class="active">Return</button>
+              <button type="button">Open Return</button>
+              <button type="button">Seasons</button>
+            </div>
+            <!-- Tab Content -->
+            <div class="return">
+              <!-- Travel date info with min and max limits -->
+              <label for="out">Out</label>
+              <input
+                type="date"
+                name="out"
+                id="out"
+                min="2022-01-01"
+                max="2022-12-31"
+                required
+              />
+              <!-- Return date info with min and max limits -->
+              <label for="ret">Return</label>
+              <input
+                type="date"
+                name="ret"
+                id="ret"
+                min="2022-01-01"
+                max="2022-12-31"
+                required
+              />
+              <br />
+              <label for="leave-1">Leaving At</label>
+              <input
+                type="time"
+                name="leave-1"
+                id="leave-1"
+                min="08:00"
+                max="23:00"
+                value="16:00"
+                required
+              />
+              <!-- Travel time info with min and max limits -->
+              <label for="leave-2">Leaving At</label>
+              <input
+                type="time"
+                name="leave-2"
+                id="leave-2"
+                min="08:00"
+                max="23:00"
+                value="16:00"
+                required
+              />
+            </div>
+            <br />
+            <label for="passengers">Add passengers</label>
+            <br />
+            <!-- Add passengers dropdown -->
+            <select
+              name="passengers"
+              id="passengers"
+              class="passengers-select"
+              required
+            >
+              <option value="adults">2 Adults</option>
+              <option value="kids16">2 Kids(16+)</option>
+              <option value="kids18">2 Kids(18+)</option>
+            </select>
+          </fieldset>
+          <!-- Button to submmit form for travel info -->
+          <button type="submit" class="ticket-btn">Get times & ticket</button>
+        </form>
+      </div>
+    </section>
+    <div class="carousel-1">
+      <!-- Carousel for tickets to various destinations -->
+      <div class="carousel-tickets">
+        <!-- Carousel Links open in new browser tab -->
+        <figure>
+          <a href="#" target="_blank">
+            <img
+              src="./assets/images/Repeat Grid 17-single.png"
+              alt="carousel-img"
+              width="300px"
+            />
+            <h4>
+              London to Liverpool <span class="rating">7.0</span>
+              <span class="reviews">
+                Good
+                <i>Reviews 350</i>
+              </span>
+            </h4>
+            <p>From $ 75.08</p>
+          </a>
+          <a href="#" target="_blank">
+            <img
+              src="./assets/images/Repeat Grid 17-single.png"
+              alt="carousel-img"
+              width="300px"
+            />
+            <h4>
+              London to Liverpool <span class="rating">7.0</span>
+              <span class="reviews">
+                Good
+                <i>Reviews 350</i>
+              </span>
+            </h4>
+            <p>From $ 75.08</p>
+          </a>
+          <a href="#" target="_blank">
+            <img
+              src="./assets/images/Repeat Grid 17-single.png"
+              alt="carousel-img"
+              width="300px"
+            />
+            <h4>
+              London to Liverpool <span class="rating">7.0</span>
+              <span class="reviews">
+                Good
+                <i>Reviews 350</i>
+              </span>
+            </h4>
+            <p>From $ 75.08</p>
+          </a>
+        </figure>
+      </div>
+      <!-- Carousel controls -->
+      <div class="carousel-controls">
+        <button type="button"></button>
+        <button type="button"></button>
+        <button type="button"></button>
+      </div>
+      <br />
+      <!-- Button to view all travel destinations -->
+      <div class="view-all-btn">
+        <button type="button">View All</button>
+      </div>
+    </div>
+
+    <!-- Carousel with images for services of app -->
+    <div class="carousel-2">
+      <figure>
+        <img
+          src="./assets/images/Ellipse 9.png"
+          alt="compare"
+          width="50px"
+          height="50px"
+        />
+        <figcaption>Compare</figcaption>
+        <p>Lorem ipsum</p>
+      </figure>
+      <figure>
+        <img
+          src="./assets/images/-train_90433.png"
+          alt="travel"
+          width="50px"
+          height="50px"
+        />
+        <figcaption>Travel</figcaption>
+        <p>Lorem ipsum</p>
+      </figure>
+      <figure>
+        <img
+          src="./assets/images/XMLID_91_.png"
+          alt="join"
+          width="50px"
+          height="50px"
+        />
+        <figcaption>Join People</figcaption>
+        <p>Lorem ipsum</p>
+      </figure>
+      <figure>
+        <img
+          src="./assets/images/Ellipse 9.png"
+          alt="support"
+          width="50px"
+          height="50px"
+        />
+        <figcaption>Support</figcaption>
+        <p>Lorem ipsum</p>
+      </figure>
+      <figure>
+        <img
+          src="./assets/images/Ellipse 9.png"
+          alt="customer"
+          width="50px"
+          height="50px"
+        />
+        <figcaption>Customer</figcaption>
+        <p>Lorem ipsum</p>
+      </figure>
+      <!-- Next button for carousel -->
+      <button type="button">-></button>
+    </div>
+    <!-- Second hero image section -->
+    <div class="hero-2">
+      <!-- Picture element used, all immages will overlap each other using CSS -->
+      <img
+        class="hero-2-base"
+        src="./assets/images/Rectangle 113@2x.png"
+        alt="hero-2-base"
+        width="1000px"
+        height="400px"
+      />
+      <img
+        class="hero-2-train"
+        src="./assets/images/trian_PNG-1@2x.png"
+        alt="hero-2-base-overlay-1"
+        width="300px"
+        height="150px"
+      />
+      <img
+        class="hero-2-woman"
+        src="./assets/images/woman-hungarian-parliament-budapest-hungary-shutterstock_1118873774-1024x683.png"
+        alt="hero-2-base-overlay-2"
+        width="300px"
+        height="300px"
+      />
+      <!-- Text for second hero image of the app -->
+      <div class="hero-2-text">
+        <h1>Explore Europe effortlessly</h1>
+        <h1>by train and bus</h1>
+        <h4>Save 61% on an average when you book in advance<sup>*</sup></h4>
+        <button type="button">Get More Details</button>
+      </div>
+    </div>
+    <!-- Help section -->
+    <div class="help-section">
+      <div class="help-cta">
+        <h1>We're here to help!</h1>
+        <p>
+          Find clear <a href="#" target="_blank">FAQs</a> online and customer
+          service available at the end of the phone seven days a week
+        </p>
+        <img
+          src="./assets/images/illu_laptop_help@2x.png"
+          alt="help"
+          width="200px"
+          height="100px"
+        />
+        <br />
+        <button type="button">CTA Button</button>
+      </div>
+      <!-- Help description list -->
+      <div class="help-topics">
+        <div class="help-list">
+          <h3>
+            Do I need to confirm in advance if travelling on a different train?
+            <!-- Added buttons to close or open a description for a heading in the description list -->
+            <button type="button">-</button>
+          </h3>
+          <p>
+            You don't need to let us know if you want to change trains,but
+            you'll need to check the terms of your ticket to see if it'll still
+            be valid for a different train.
+          </p>
+        </div>
+        <div class="help-list">
+          <h3>
+            How much luggage can I take on a train?
+            <button type="button">+</button>
+          </h3>
+        </div>
+        <div class="help-list">
+          <h3>
+            How will I recieve my tickets? <button type="button">+</button>
+          </h3>
+        </div>
+        <div class="help-list">
+          <h3>
+            What do the different seat options mean?
+            <button type="button">+</button>
+          </h3>
+        </div>
+      </div>
+    </div>
+
+    <!-- App store section -->
+    <div class="app-store">
+      <div class="store-description">
+        <h1>Europe's leading bus and train app!</h1>
+        <h4>
+          Keep your trip on track with departure times, platform info and
+          tickets in the palm of your hands
+        </h4>
+        <br />
+        <!-- Links to respective app stores with img elements-->
+        <div class="store-links">
+          <a href="#" target="_blank">
+            <img
+              src="./assets/images/Group 9691@2x.png"
+              alt="apple-store"
+              width="250px"
+              height="100px"
+            />
+          </a>
+          <a href="#" target="_blank">
+            <img
+              src="./assets/images/Group 9693@2x.png"
+              alt="play-store"
+              width="250px"
+              height="100px"
+            />
+          </a>
+        </div>
+      </div>
+      <div>
+        <!-- Screenshots of mobile app -->
+        <figure>
+          <img
+            src="./assets/images/mobile3@2x.png"
+            alt="app-store"
+            width="400px"
+            height="500px"
+          />
+        </figure>
+      </div>
+    </div>
+    <!-- Navigation controls: Left and Right arrows -->
+    <div class="app-controls">
+      <button type="button">
+        <img
+          src="./assets/images/Group 9807@2x.png"
+          alt="left-slider"
+          width="30px"
+          height="30px"
+        />
+      </button>
+      <button type="button">
+        <img
+          src="./assets/images/Group 9808@2x.png"
+          alt="right-slider"
+          width="30px"
+          height="30px"
+        />
+      </button>
+    </div>
+
+    <!-- Footer -->
+    <!-- Footer -->
+    <footer>
+      <div class="footer-company">
+        <h2>We're happy when our customers are too</h2>
+        <!-- img for app logo -->
+        <img
+          src="./assets/images/Group 16060@2x.png"
+          alt="greenline-logo"
+          width="250px"
+          height="50px"
+        />
+        <!-- Company Details -->
+        <br />
+        <p>Greenline.com Limited is registered in England</p>
+        <p>and Wales. Company No.3498634</p>
+
+        <br />
+        <br />
+        <p>Register Address:</p>
+        <p>3rd Floor, 120 Huntington Ave,</p>
+        <p>London UK. VAT No: 783475489</p>
+        <!-- Social Links -->
+        <picture>
+          <a href="#" target="_blank"
+            ><img
+              src="./assets/images/Group 9740@2x.png"
+              alt="fb"
+              width="50px"
+              height="50px"
+          /></a>
+          <a href="#" target="_blank"
+            ><img
+              src="./assets/images/Group 9741@2x.png"
+              alt="tw"
+              width="50px"
+              height="50px"
+          /></a>
+          <a href="#" target="_blank"
+            ><img
+              src="./assets/images/Group 9742@2x.png"
+              alt="ig"
+              width="50px"
+              height="50px"
+          /></a>
+          <a href="#" target="_blank"
+            ><img
+              src="./assets/images/Group 9743@2x.png"
+              alt="tg"
+              width="50px"
+              height="50px"
+          /></a>
+        </picture>
+      </div>
+      <!-- External Links -->
+      <div class="external-links-1">
+        <ul>
+          <li>
+            <a href="#" target="_blank">About Greenline</a>
+          </li>
+          <li>
+            <a href="#" target="_blank">News</a>
+          </li>
+          <li>
+            <a href="#" target="_blank">Investors</a>
+          </li>
+          <li>
+            <a href="#" target="_blank">Careers</a>
+          </li>
+          <li>
+            <a href="#" target="_blank">Greenline Partner Solutions</a>
+          </li>
+          <li>
+            <a href="#" target="_blank">Terms & Conditions</a>
+          </li>
+          <li>
+            <a href="#" target="_blank">Privacy/Cookies</a>
+          </li>
+        </ul>
+      </div>
+
+      <!-- More hyperlinks -->
+      <div class="external-links-2">
+        <ul>
+          <li>
+            <a href="#" target="_blank">Help & Useful Info</a>
+          </li>
+          <li>
+            <a href="#" target="_blank">Train & Bus companies</a>
+          </li>
+          <li>
+            <a href="#" target="_blank">Train Journeys in the UK</a>
+          </li>
+          <li>
+            <a href="#" target="_blank">Top Destinations</a>
+          </li>
+          <li>
+            <a href="#" target="_blank">Stations</a>
+          </li>
+        </ul>
+      </div>
+    </footer>
+
+    <div class="footer-bottom">
+      <p>Copyright &copy; 2021 greenline.com Limited. All rights reserved</p>
+      <p><a href="#" target="_blank">Terms & Conditions</a></p>
+      <p><a href="#" target="_blank">Privacy Policy</a></p>
+    </div>
+
+    <!-- <footer>
+      <div class="footer-div-1">
+        <img
+          src="assets/images/Path 2954@2x.png"
+          alt="green-rec"
+          height="400px"
+          width="1478px"
+        />
+      </div>
+
+      <div class="footer-div-2">
+        <img
+          src="assets/images/Path 3005@2x.png"
+          alt="green-rec"
+          height="40px"
+          width="1478px"
+        />
+      </div>
+      <div class="footer-div-3">
+        <img
+          src="assets/images/Copyright@2x.png"
+          alt="Copyright"
+          height="15px"
+          width="410px"
+        />
+      </div>
+      <div class="footer-div-4">
+        <img
+          src="assets/images/Copyright-1@2x.png"
+          alt="Copyright-1"
+          height="15px"
+          width="250px"
+        />
+      </div>
+      <div class="footer-div-text">
+        <h2>
+          <p><strong>We are happy when our customer are too</strong></p>
+        </h2>
+      </div>
+      <div class="footer-logo">
+        <img
+          src="assets/images/Group 16060@2x.png"
+          alt="greenline logo"
+          width="270"
+          height="60"
+        />
+      </div>
+      <div class="footer-parag">
+        <img
+          src="assets/images/Paragraph@2x.png"
+          alt="greenline logo"
+          width="300"
+          height="200"
+        />
+      </div>
+      <div class="footer-fb">
+        <img
+          src="assets/images/Group 9740@2x.png"
+          alt="greenline logo"
+          width="30"
+          height="30"
+        />
+      </div>
+      <div class="footer-twt">
+        <img
+          src="assets/images/Group 9741@2x.png"
+          alt="greenline logo"
+          width="30"
+          height="30"
+        />
+      </div>
+      <div class="footer-insta">
+        <img
+          src="assets/images/Group 9742@2x.png"
+          alt="greenline logo"
+          width="30"
+          height="30"
+        />
+      </div>
+      <div class="footer-tel">
+        <img
+          src="assets/images/Group 9743@2x.png"
+          alt="greenline logo"
+          width="30"
+          height="30"
+        />
+      </div>
+      <div class="footer-link">
+        <ul class="footer-list">
+          <li class="footer-list">
+            <a class="a-text" href=" ">About Greenline</a>
+          </li>
+          <li class="footer-list"><a class="a-text" href=" ">News</a></li>
+          <li class="footer-list"><a class="a-text" href=" ">Investors</a></li>
+          <li class="footer-list"><a class="a-text" href=" ">Careers</a></li>
+          <li class="footer-list">
+            <a class="a-text" href=" ">Greenline Partner Solutions</a>
+          </li>
+          <li class="footer-list">
+            <a class="a-text" href=" ">Affiliates and Patnerships</a>
+          </li>
+          <li class="footer-list">
+            <a class="a-text" href=" ">Terms and conditions / Security</a>
+          </li>
+          <li class="footer-list">
+            <a class="a-text" href=" ">Privacy / Cookies</a>
+          </li>
+          <li class="footer-list">
+            <a class="a-text" href=" ">Modern Slavery Act (UK)</a>
+          </li>
+        </ul>
+      </div>
+      <div class="footer-img">
+        <img
+          src="assets/images/Repeat Grid 18@2x.png"
+          alt="grid_logo"
+          width="400"
+          height="300"
+        />
+      </div>
+      <div class="footer-link-1">
+        <ul class="footer-list-1">
+          <li class="footer-list-1">
+            <a class="a-text" href=" ">Help and useful information</a>
+          </li>
+          <li class="footer-list-1"><a class="a-text" href=" ">News</a></li>
+          <li class="footer-list-1">
+            <a class="a-text" href=" ">Investors</a>
+          </li>
+          <li class="footer-list-1"><a class="a-text" href=" ">Careers</a></li>
+          <li class="footer-list-1">
+            <a class="a-text" href=" ">Greenline Partner Solutions</a>
+          </li>
+          <li class="footer-list-1">
+            <a class="a-text" href=" ">Affiliates and Patnerships</a>
+          </li>
+        </ul>
+      </div>
+    </footer> -->
+  </body>
+</html>

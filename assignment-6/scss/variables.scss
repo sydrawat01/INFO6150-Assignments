@@ -1,0 +1,25 @@
+// Importing the sass built-in modules
+@use 'sass:color';
+@use 'sass:math';
+
+// Fonts
+$family: 'Montserrat', sans-serif;
+$default: 1rem;
+$heading: $default * 3; //3rem
+$caption: $default + 0.3rem; //1.3rem
+$big: $default + 0.2rem; //1.2rem
+$para: $default + 0.1rem; //1.1rem
+$small: $default - 0.2rem; //0.8rem
+$bold: 700;
+$regular: 400;
+$thin: 100;
+
+// Colors
+$app-blue: #0054a6;
+$app-light-blue: #1b76a0;
+$app-grey: #f1f2f6;
+$app-dark-grey: #808080;
+$app-white: #fff;
+$app-red: rgba(226, 112, 112, 0.87);
+$black-shadow: rgba(11, 16, 36, 0.4);
+$app-black: color.adjust($black-shadow, $alpha: 1);

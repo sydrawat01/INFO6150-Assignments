@@ -1,0 +1,37 @@
+// Importing the sass:color built-in module
+@use 'sass:color';
+@use 'sass:math';
+
+// App base colors
+$app-green: #00a88f;
+$app-dark-green: #028d78;
+$link-hover: #0b6a5c;
+$app-light-green: #cfede9;
+$app-blue: #0054a6;
+$app-light-blue: #a3d4eb;
+$app-grey: #f1f2f6;
+$app-dark-grey: #808080;
+$app-white: #fff;
+
+// Shadow colors
+$black-shadow: rgba(11, 16, 36, 0.4);
+$form-shadow: #8bbab9;
+
+// Fonts
+$family: 'Montserrat', sans-serif;
+$default: 1rem;
+$heading: $default * 3; //3rem
+$caption: $default + 0.3rem; //1.3rem
+$big: $default + 0.2rem; //1.2rem
+$para: $default + 0.1rem; //1.1rem
+$small: $default - 0.2rem; //0.8rem
+$bold: 700;
+$regular: 400;
+$thin: 100;
+
+// Using the debug at-rule
+@debug 1rem + 0.2rem;
+@debug math.percentage(0.13);
+
+// Setting the black color using built-in sass:color module
+$app-black: color.adjust($black-shadow, $alpha: 1);

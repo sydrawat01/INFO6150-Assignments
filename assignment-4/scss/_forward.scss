@@ -1,0 +1,8 @@
+/* Using the @forward at-rule to make reset padding
+   and margin to zero
+*/
+
+@mixin reset-padding-margin {
+  margin: 0;
+  padding: 0;
+}

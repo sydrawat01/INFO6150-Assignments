@@ -1,0 +1,99 @@
+/* CSS File for hero section 1 */
+
+/*  Using absolute position and z-index to overlap images */
+
+.hero img,
+.hero div,
+.aside-form form {
+  position: absolute;
+}
+
+.hero .base-1 {
+  z-index: 2;
+  left: 500px;
+}
+
+.hero .base-2 {
+  z-index: 1;
+  left: 500px;
+}
+
+.hero .base-3 {
+  z-index: 3;
+  left: 850px;
+  top: 390px;
+}
+
+/* Hero image text overlay */
+.hero .hero-text-overlay {
+  z-index: 4;
+  color: white;
+  display: flex;
+  top: 20%;
+  left: 55%;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: space-around;
+}
+
+/* Text overlay button */
+
+.hero .hero-text-overlay button {
+  background-color: #00a88f;
+  color: white;
+  border-radius: 25px 25px;
+  border: 2px solid white;
+  width: 150px;
+  height: 50px;
+  font-size: 1.2rem;
+}
+
+/* Form for travel details */
+.aside-form .main-form {
+  z-index: 5;
+  background-color: white;
+  padding: 30px;
+  border-radius: 25px 25px;
+  top: 25%;
+  left: 13%;
+}
+
+/* Button to switch to and from locations */
+.switch {
+  border-radius: 50% 50%;
+  font-size: 11px;
+  background-color: #00a88f;
+}
+
+/* Book ticket button */
+.main-form .ticket-btn {
+  margin: 10px 0;
+  width: 100%;
+  height: 50px;
+  font-size: 1.2rem;
+}
+
+/* Tabs for ticket booking */
+.tab-btns {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  background-color: #0054a6;
+}
+
+/* Active tab button */
+.tab-btns .active {
+  background-color: #00a88f;
+}
+
+/* Passenger selection dropdown */
+.passengers-select {
+  background: lightgray;
+  width: 100%;
+  padding: 8px;
+}
+
+/* Station input field */
+.station-input {
+  width: 53%;
+}

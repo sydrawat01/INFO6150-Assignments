@@ -1,0 +1,38 @@
+/* CSS file for app store section of the webpage */
+
+/* Container for app store section */
+.app-store {
+  display: flex;
+  align-items: center;
+}
+
+/*  Left and right buttons at app store section bottom */
+.app-controls {
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+}
+
+/* App store section button styles */
+
+.app-controls button {
+  margin: 0 10px;
+}
+
+/* App store links */
+.store-links {
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+}
+
+/* Store links hyperlynk styles */
+.store-links a {
+  padding: 0 10px;
+}
+
+/* App store section description */
+.store-description {
+  display: flex;
+  flex-direction: column;
+}

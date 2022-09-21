@@ -1,0 +1,39 @@
+/* CSS File for hero section 2 */
+
+/*  Using absolute position and z-index to overlap images */
+.hero-2 div,
+.hero-2 img {
+  position: absolute;
+}
+
+.hero-2 .hero-2-base {
+  z-index: 1;
+  left: 200px;
+}
+
+.hero-2 .hero-2-train {
+  z-index: 2;
+  left: 680px;
+  top: 1450px;
+}
+
+.hero-2 .hero-2-woman {
+  z-index: 3;
+  left: 780px;
+  top: 1350px;
+}
+
+.hero-2 .hero-2-text {
+  color: white;
+  z-index: 4;
+  left: 300px;
+}
+
+.hero-2 .hero-2-text button {
+  background-color: white;
+  color: #00a88f;
+  cursor: pointer;
+  padding: 12px 50px;
+  border-radius: 15px 15px;
+  margin: 50px;
+}

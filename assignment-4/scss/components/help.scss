@@ -1,0 +1,89 @@
+@use 'sass:math';
+
+// Nesting of selectors
+.help-section {
+  margin-top: 500px;
+  display: flex;
+  padding: 20px math.percentage(0.1);
+  justify-content: space-between;
+  align-items: center;
+
+  .help-cta {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    h1 {
+      font-size: $heading;
+      text-align: center;
+    }
+
+    p {
+      text-align: center;
+      // Using built-in math module
+      padding: 0 30px math.percentage(0.05);
+    }
+
+    img {
+      width: 250px;
+      height: 150px;
+    }
+
+    .cta-btn {
+      // Using built-in math module
+      width: math.percentage(0.6);
+      font-size: $big;
+      font-weight: $bold;
+      padding: 15px;
+      margin: 20px 0 0;
+    }
+  }
+}
+
+.expanded {
+  border: 1px solid $app-blue;
+}
+
+.help-topics {
+  padding-left: 15px;
+  // Using built-in math module
+  width: math.percentage(0.75);
+  .help-list {
+    background-color: $app-white;
+    border-radius: 12px 12px;
+    padding: 20px;
+    margin: 10px 0;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: flex-start;
+    // Using mixin to set the box shadow
+    @include shadow($black-shadow);
+
+    h3 {
+      font-size: $default;
+    }
+
+    .active {
+      display: flex;
+      flex-direction: column;
+
+      h3 {
+        font-size: $default;
+      }
+
+      p {
+        font-size: $small;
+        color: $app-dark-grey;
+      }
+    }
+
+    &-btn {
+      background-color: transparent;
+      color: $app-dark-grey;
+      // Using math operators
+      font-size: $default * 2;
+      font-weight: $bold;
+    }
+  }
+}

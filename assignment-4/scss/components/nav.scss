@@ -1,0 +1,51 @@
+// Nesting of selectors
+header {
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  padding: 20px 5%;
+  position: sticky;
+  top: 0;
+  background-color: $app-white;
+  z-index: 100;
+
+  .logo {
+    text-decoration: none;
+    margin-right: auto;
+    width: 300px;
+    height: 60px;
+    cursor: pointer;
+  }
+  .nav-links {
+    list-style-type: none;
+    display: flex;
+    flex-direction: row;
+
+    .lang {
+      display: flex;
+      flex-direction: row;
+      align-items: center;
+    }
+
+    li {
+      display: inline-block;
+      padding: 0 20px;
+    }
+  }
+}
+
+// Styling the bottom nav bar with drop-downs
+.bottom-nav {
+  padding: 0px 5%;
+  position: sticky;
+  top: 88px;
+  background-color: $app-white;
+  z-index: 100;
+  section {
+    padding-bottom: 10px;
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+    align-items: center;
+  }
+}

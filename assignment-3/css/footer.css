@@ -1,0 +1,61 @@
+/* CSS file for footer styles */
+
+/* Footer container */
+footer {
+  margin-top: 100px;
+  display: flex;
+  justify-content: space-around;
+  background-color: #00a88f;
+  color: white;
+}
+
+footer a {
+  color: white;
+}
+
+/* Footer company section */
+.footer-company {
+  padding: 10px;
+}
+
+/* Footer external links section 1 */
+.external-links-1 {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.external-links-1 ul li {
+  padding: 5px 0;
+  margin: 10px 0;
+}
+
+/* Footer external links section 2*/
+.external-links-2 {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.external-links-2 ul li {
+  border-bottom: 1px solid white;
+  width: 100%;
+  padding: 5px 0;
+  margin: 10px 0;
+}
+
+/* Footer copyright details */
+.footer-bottom {
+  display: flex;
+  justify-content: space-around;
+  color: white;
+  background-color: #00a88f;
+}
+
+.footer-bottom a {
+  color: white;
+}
+
+.footer-bottom a:hover {
+  color: #0054a6;
+}

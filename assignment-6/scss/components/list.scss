@@ -1,0 +1,45 @@
+.list {
+  list-style-type: none;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+
+  &-item {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: baseline;
+    padding: 10px;
+    margin: 10px;
+    width: 40%;
+    background-color: $app-grey;
+    // border: 1px solid $app-black;
+    border-radius: 12px 12px;
+    @include shadow($black-shadow);
+
+    &:hover {
+      cursor: pointer;
+      transform: scale(1.1);
+    }
+
+    .todo-item {
+      font-weight: $bold;
+      margin-left: 10px;
+      font-size: $caption;
+
+      &-details {
+        font-style: italic;
+        font-weight: $regular;
+        font-size: $default;
+        width: 300px;
+        margin-left: 15px;
+        color: $app-dark-grey;
+
+        .details {
+          margin: 10px 0 0;
+        }
+      }
+    }
+  }
+}

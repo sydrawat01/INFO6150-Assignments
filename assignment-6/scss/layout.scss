@@ -1,0 +1,27 @@
+body {
+  padding: 25px;
+  font-family: $family;
+}
+
+h1 {
+  text-align: center;
+  font-size: $heading;
+  margin-left: 50px;
+  color: $app-black;
+}
+
+button {
+  margin-left: 20px;
+  padding: 9px 25px;
+  font-size: $default;
+  background-color: $app-blue;
+  color: $app-white;
+  border: none;
+  border-radius: 50px;
+  cursor: pointer;
+
+  &:hover {
+    background-color: $app-light-blue;
+    cursor: pointer;
+  }
+}
