@@ -1,0 +1,35 @@
+[
+  {
+    "id": "1",
+    "title": "Get bread",
+    "details":
+      {
+        "description" : "Order only brown bread, gluten free, from Walmart",
+        "due_date": "2022-02-28",
+        "due_time": "19:30",
+        "status": "open"
+      }
+  },
+  {
+    "id": "2",
+    "title": "Buy milk",
+    "details":
+      {
+        "description" : "2% fat milk from Stop & Shop",
+        "due_date": "2022-02-04",
+        "due_time": "07:05",
+        "status": "closed"
+      }
+  },
+  {
+    "id": "3",
+    "title": "Order eggs",
+    "details":
+      {
+        "description" : "Large, brown eggs, crate of 12",
+        "due_date": "2022-03-10",
+        "due_time": "18:00",
+        "status": "open"
+      }
+  }
+]

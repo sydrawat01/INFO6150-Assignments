@@ -1,0 +1,5 @@
+// Mixin for giving shadows to cards
+
+@mixin shadow($color) {
+  box-shadow: 4px 4px 8px $color;
+}

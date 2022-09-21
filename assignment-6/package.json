@@ -1,0 +1,28 @@
+{
+  "name": "assignment-6-sydrawat01",
+  "version": "1.0.0",
+  "description": "Todo List in Vanilla JS",
+  "main": "app.js",
+  "scripts": {
+    "sass": "sass scss/main.scss dist/main.css"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/neu-mis-info6150-spring-2022/assignment-6-sydrawat01.git"
+  },
+  "keywords": [
+    "Todo",
+    "List",
+    "Vanilla",
+    "JS"
+  ],
+  "author": "Siddharth Rawat <siddharth.rawat94@gmail.com>",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/neu-mis-info6150-spring-2022/assignment-6-sydrawat01/issues"
+  },
+  "homepage": "https://github.com/neu-mis-info6150-spring-2022/assignment-6-sydrawat01#readme",
+  "devDependencies": {
+    "sass": "^1.49.8"
+  }
+}

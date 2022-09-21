@@ -1,0 +1,61 @@
+// Using the forward rule defined in _forward.scss here
+@use '../forward';
+@use 'sass:math';
+
+/* Container for app store section */
+.app-store {
+  display: flex;
+  // Using built-in math module
+  padding: 20px math.percentage(0.15);
+  align-items: center;
+  justify-content: space-between;
+
+  /* App store section description */
+  .store-description {
+    display: flex;
+    flex-direction: column;
+    h1 {
+      font-size: $heading;
+      font-weight: $bold;
+      color: $app-black;
+    }
+
+    h4 {
+      color: $app-dark-grey;
+    }
+
+    /* App store links */
+    .store-links {
+      display: flex;
+      flex-direction: row;
+      justify-content: flex-start;
+
+      /* Store links hyperlynk styles */
+      a {
+        padding: 0 10px;
+      }
+    }
+  }
+}
+
+/*  Left and right buttons at app store section bottom */
+.app-controls {
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  // Using built-in math module
+  padding: 10px math.percentage(0.1);
+
+  /* App store section button styles */
+  button {
+    background-color: transparent;
+    // Using the forward rule from _forward.scss here
+    @include forward.reset-padding-margin;
+    border-radius: 12px 12px;
+
+    img {
+      width: 60px;
+      height: 60px;
+    }
+  }
+}

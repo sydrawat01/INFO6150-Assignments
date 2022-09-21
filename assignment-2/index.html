@@ -1,0 +1,604 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- Title for Web Page tab -->
+    <title>Greenline</title>
+  </head>
+  <body>
+    <!-- Header element for App Logo -->
+    <header>
+      <!-- Figure element for app logo -->
+      <figure>
+        <img
+          src="assets/images/Group 16059@2x.png"
+          alt="logo"
+          width="350px"
+          height="80px"
+        />
+      </figure>
+    </header>
+    <!-- Nav element for navigation links -->
+    <nav>
+      <!-- Unordered list of nav items -->
+      <ul>
+        <!-- Figure element for GB flag -->
+        <figure>
+          <img
+            src="assets/images/gb@2x.png"
+            alt="gb-flag"
+            width="30"
+            height="20"
+          />
+        </figure>
+        <select name="language" id="lang" required>
+          <option value="US">EN/USD</option>
+          <option value="UK">EN/GBP</option>
+        </select>
+        <!-- Navigation Links -->
+        <li><a href="#" target="_blank">Business</a></li>
+        <li><a href="#" target="_blank">Help</a></li>
+        <li><a href="#" target="_blank">Register</a></li>
+        <!-- Button for Sign In nav link -->
+        <li><button type="button">Sign In</button></li>
+      </ul>
+      <!-- Seperate section for various drop down menus in the navbar -->
+      <section>
+        <select name="uk-trains" id="uk-trains">
+          <option value="uk-trains">UK Trains</option>
+          <option value="lorem">Lorem</option>
+          <option value="lorem">Lorem</option>
+          <option value="lorem">Lorem</option>
+        </select>
+        <select name="eu-trains" id="eu-trains">
+          <option value="eu-trains">European Trains</option>
+          <option value="lorem">Lorem</option>
+          <option value="lorem">Lorem</option>
+          <option value="lorem">Lorem</option>
+        </select>
+        <select name="companies" id="companies">
+          <option value="train-companies">Train Companies</option>
+          <option value="lorem">Lorem</option>
+          <option value="lorem">Lorem</option>
+          <option value="lorem">Lorem</option>
+        </select>
+        <select name="pop-journeys" id="pop-journeys">
+          <option value="pop-journeys">Popular Journeys</option>
+          <option value="lorem">Lorem</option>
+          <option value="lorem">Lorem</option>
+          <option value="lorem">Lorem</option>
+        </select>
+      </section>
+    </nav>
+    <main>
+      <!-- Figure element for main hero image -->
+      <figure>
+        <img
+          src="./assets/images/nick-page-1@2x.png"
+          alt="hero-base-img"
+          width="800px"
+          height="500px"
+        />
+        <!-- More images that will overlay each other via CSS -->
+        <img
+          src="./assets/images/nick-page-4iZrQRh5gb4-unsplash@2x.png"
+          alt="hero-base-img-2"
+          width="800px"
+          height="500px"
+        />
+        <img
+          src="./assets/images/trian_PNG-1@2x.png"
+          alt="hero-train"
+          width="500px"
+          height="300px"
+        />
+      </figure>
+      <!-- Text section for main hero image -->
+      <section>
+        <h2>Explore Europe effortlessly by train and bus</h2>
+        <h4>Save 61% on average when you book in advance<sup>*</sup></h4>
+        <button
+          type="button"
+          style="width: 150px; height: 50px; font-size: 1.2rem"
+        >
+          Learn More
+        </button>
+      </section>
+      <aside>
+        <!-- Form 1 for trip details with form validations -->
+        <form action="greenline.html" method="POST">
+          <fieldset>
+            <label for="input">Input</label>
+            <input
+              type="text"
+              name="input"
+              id="input"
+              placeholder="placeholder"
+              required
+            />
+            <button type="button">-> <-</button>
+            <label for="to">To</label>
+            <input
+              type="text"
+              name="to"
+              id="to"
+              placeholder="placeholder"
+              required
+            />
+            <br />
+            <input type="checkbox" name="check" id="check" value="via/avoid" />
+            <label for="check">Via / Avoid</label>
+            <select name="avoid" id="avoid" required>
+              <option value="avoid">Avoid</option>
+              <option value="avoid">Via</option>
+            </select>
+            <input
+              type="text"
+              name="station"
+              id="station"
+              placeholder="Enter station..."
+              required
+            />
+            <br />
+          </fieldset>
+          <!-- Tab Links for Form element -->
+          <fieldset>
+            <div>
+              <!-- Buttons for tab links that will be styled to look like tabs with CSS -->
+              <button type="button">One Way</button>
+              <button type="button">Return</button>
+              <button type="button">Open Return</button>
+              <button type="button">Seasons</button>
+            </div>
+            <!-- Tab Content -->
+            <div id="return">
+              <!-- Travel date info with min and max limits -->
+              <label for="out">Out</label>
+              <input
+                type="date"
+                name="out"
+                id="out"
+                min="2022-01-01"
+                max="2022-12-31"
+                required
+              />
+              <!-- Return date info with min and max limits -->
+              <label for="ret">Return</label>
+              <input
+                type="date"
+                name="ret"
+                id="ret"
+                min="2022-01-01"
+                max="2022-12-31"
+                required
+              />
+              <br />
+              <label for="leave-1">Leaving At</label>
+              <input
+                type="time"
+                name="leave-1"
+                id="leave-1"
+                min="08:00"
+                max="23:00"
+                value="16:00"
+                required
+              />
+              <!-- Travel time info with min and max limits -->
+              <label for="leave-2">Leaving At</label>
+              <input
+                type="time"
+                name="leave-2"
+                id="leave-2"
+                min="08:00"
+                max="23:00"
+                value="16:00"
+                required
+              />
+            </div>
+            <br />
+            <label for="passengers">Add passengers</label>
+            <br />
+            <!-- Add passengers dropdown -->
+            <select name="passengers" id="passengers" required>
+              <option value="adults">2 Adults</option>
+              <option value="kids16">2 Kids(16+)</option>
+              <option value="kids18">2 Kids(18+)</option>
+            </select>
+          </fieldset>
+          <!-- Button to submmit form for travel info -->
+          <button
+            type="submit"
+            style="width: 150px; height: 50px; font-size: 1.2rem"
+          >
+            Get times & ticket
+          </button>
+        </form>
+      </aside>
+    </main>
+    <article>
+      <!-- Carousel for tickets to various destinations -->
+      <div
+        style="
+          display: flex;
+          flex-direction: row;
+          align-items: center;
+          justify-content: space-between;
+        "
+      >
+        <!-- Carousel Links open in new browser tab -->
+        <figure>
+          <a href="#" target="_blank">
+            <img
+              src="./assets/images/Repeat Grid 17-single.png"
+              alt="carousel-img"
+              width="400px"
+            />
+          </a>
+          <a href="#" target="_blank">
+            <img
+              src="./assets/images/Repeat Grid 17-single.png"
+              alt="carousel-img"
+              width="400px"
+            />
+          </a>
+          <a href="#" target="_blank">
+            <img
+              src="./assets/images/Repeat Grid 17-single.png"
+              alt="carousel-img"
+              width="400px"
+            />
+          </a>
+        </figure>
+      </div>
+      <!-- Carousel controls -->
+      <div
+        style="
+          display: flex;
+          flex-direction: column;
+          align-items: center;
+          justify-content: space-between;
+        "
+      >
+        <button type="button">
+          <img
+            src="./assets/images/Group 9846@2x.png"
+            alt="carousel-controls"
+            width="100px"
+          />
+        </button>
+      </div>
+      <br />
+      <!-- Button to view all travel destinations -->
+      <div
+        style="
+          display: flex;
+          flex-direction: column;
+          align-items: center;
+          justify-content: space-between;
+        "
+      >
+        <button
+          type="button"
+          style="width: 150px; height: 50px; font-size: 1.2rem"
+        >
+          View All
+        </button>
+      </div>
+    </article>
+    <br />
+    <!-- Carousel with immages for services of app -->
+    <section style="display: flex; justify-content: center">
+      <figure>
+        <img
+          src="./assets/images/Ellipse 9.png"
+          alt="compare"
+          width="50px"
+          height="50px"
+        />
+        <figcaption>Compare</figcaption>
+        <p>Lorem ipsum</p>
+      </figure>
+      <figure>
+        <img
+          src="./assets/images/-train_90433.png"
+          alt="travel"
+          width="50px"
+          height="50px"
+        />
+        <figcaption>Travel</figcaption>
+        <p>Lorem ipsum</p>
+      </figure>
+      <figure>
+        <img
+          src="./assets/images/XMLID_91_.png"
+          alt="join"
+          width="50px"
+          height="50px"
+        />
+        <figcaption>Join People</figcaption>
+        <p>Lorem ipsum</p>
+      </figure>
+      <figure>
+        <img
+          src="./assets/images/Ellipse 9.png"
+          alt="support"
+          width="50px"
+          height="50px"
+        />
+        <figcaption>Support</figcaption>
+        <p>Lorem ipsum</p>
+      </figure>
+      <figure>
+        <img
+          src="./assets/images/Ellipse 9.png"
+          alt="customer"
+          width="50px"
+          height="50px"
+        />
+        <figcaption>Customer</figcaption>
+        <p>Lorem ipsum</p>
+      </figure>
+      <!-- Next button for carousel -->
+      <button type="button">-></button>
+    </section>
+    <!-- Second hero image section -->
+    <section>
+      <!-- Picture element used, all immages will overlap each other using CSS -->
+      <picture>
+        <img
+          src="./assets/images/Rectangle 113@2x.png"
+          alt="hero-2-base"
+          width="1000px"
+          height="400px"
+        />
+        <img
+          src="./assets/images/trian_PNG-1@2x.png"
+          alt="hero-2-base-overlay-1"
+          width="300px"
+          height="150px"
+        />
+        <img
+          src="./assets/images/woman-hungarian-parliament-budapest-hungary-shutterstock_1118873774-1024x683.png"
+          alt="hero-2-base-overlay-2"
+          width="300px"
+          height="300px"
+        />
+        <!-- Text for second hero image of the app -->
+        <h1>Explore Europe effortlesslyby train and bus</h1>
+        <h4>Save 61% on an average when you book in advance<sup>*</sup></h4>
+        <button type="button">Get More Details</button>
+      </picture>
+    </section>
+    <!-- Help section -->
+    <section>
+      <aside>
+        <h1>We're here to help!</h1>
+        <p>
+          Find clear <a href="#" target="_blank">FAQs</a> online and customer
+          service available at the end of the phone seven days a week
+        </p>
+        <img
+          src="./assets/images/illu_laptop_help@2x.png"
+          alt="help"
+          width="200px"
+          height="100px"
+        />
+        <br />
+        <button type="button">CTA Button</button>
+      </aside>
+      <!-- Help description list -->
+      <aside style="display: flex">
+        <dl>
+          <dt>
+            <h3>
+              Do I need to confirm in advance if travelling on a different
+              train?
+              <!-- Added buttons to close or open a description for a heading in the description list -->
+              <button type="button">+</button>
+            </h3>
+          </dt>
+          <dd>
+            You don't need to let us know if you want to change trains,but
+            you'll need to check the terms of your ticket to see if it'll still
+            be valid for a different train.
+          </dd>
+          <dt>
+            <h3>
+              How much luggage can I take on a train?
+              <button type="button">+</button>
+            </h3>
+          </dt>
+          <dd>
+            Lorem ipsum, dolor sit amet consectetur adipisicing elit. Dicta ex
+            atque nobis dolor iste, neque, minus facere architecto itaque ab
+            cumque iure consequuntur consequatur voluptatem illo, provident
+            porro beatae. Tempore?
+          </dd>
+          <dt>
+            <h3>
+              How will I recieve my tickets? <button type="button">+</button>
+            </h3>
+          </dt>
+          <dd>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Molestias,
+            est obcaecati pariatur earum voluptatibus aliquid perferendis
+            cupiditate dicta vero. Dolorum obcaecati explicabo a natus iste
+            magnam fugit totam eligendi tenetur.
+          </dd>
+          <dt>
+            <h3>
+              What do the different seat options mean?
+              <button type="button">+</button>
+            </h3>
+          </dt>
+          <dd>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Laudantium,
+            possimus. Harum amet tempora eos placeat, illo eligendi atque
+            deleniti dolorum voluptatem soluta cumque dolores vel fuga eveniet
+            eum ipsum quo!
+          </dd>
+        </dl>
+      </aside>
+    </section>
+    <!-- App store section -->
+    <section>
+      <h1>Europe's leading bus and train app!</h1>
+      <h4>
+        Keep your trip on track with departure times, platform info and tickets
+        in the palm of your hands
+      </h4>
+      <!-- Screenshots of mobile app -->
+      <figure>
+        <img
+          src="./assets/images/mobile3@2x.png"
+          alt="app-store"
+          width="400px"
+          height="500px"
+        />
+      </figure>
+      <br />
+      <!-- Links to respective app stores with img elements-->
+      <a href="#" target="_blank">
+        <img
+          src="./assets/images/Group 9691@2x.png"
+          alt="apple-store"
+          width="250px"
+          height="100px"
+        />
+      </a>
+      <a href="#" target="_blank">
+        <img
+          src="./assets/images/Group 9693@2x.png"
+          alt="play-store"
+          width="250px"
+          height="100px"
+        />
+      </a>
+      <!-- Navigation controls: Left and Right arrows -->
+      <div>
+        <button type="button">
+          <img
+            src="./assets/images/Group 9807@2x.png"
+            alt="left-slider"
+            width="30px"
+            height="30px"
+          />
+        </button>
+        <button type="button">
+          <img
+            src="./assets/images/Group 9808@2x.png"
+            alt="right-slider"
+            width="30px"
+            height="30px"
+          />
+        </button>
+      </div>
+    </section>
+    <!-- Footer -->
+    <footer>
+      <div>
+        <h3>We're happy when our customers are too</h3>
+        <!-- img for app logo -->
+        <img
+          src="./assets/images/Group 16059@2x.png"
+          alt="greenline-logo"
+          width="250px"
+          height="50px"
+        />
+        <!-- Company Details -->
+        <br />
+        <p>
+          Greenline.com Limited is registered in England and Wales. Company No.
+          3498634
+        </p>
+        <br />
+        <br />
+        <p>Register Address:</p>
+        <p>3rd Floor, 120 Huntington Ave, London UK. VAT No: 783475489</p>
+        <!-- Social Links -->
+        <picture>
+          <a href="#" target="_blank"
+            ><img
+              src="./assets/images/Group 9740@2x.png"
+              alt="fb"
+              width="50px"
+              height="50px"
+          /></a>
+          <a href="#" target="_blank"
+            ><img
+              src="./assets/images/Group 9741@2x.png"
+              alt="tw"
+              width="30px"
+              height="30px"
+          /></a>
+          <a href="#" target="_blank"
+            ><img
+              src="./assets/images/Group 9742@2x.png"
+              alt="ig"
+              width="50px"
+              height="50px"
+          /></a>
+          <a href="#" target="_blank"
+            ><img
+              src="./assets/images/Group 9743@2x.png"
+              alt="tg"
+              width="50px"
+              height="50px"
+          /></a>
+        </picture>
+      </div>
+      <!-- External Links -->
+      <div style="display: flex">
+        <ul>
+          <li>
+            <a href="#" target="_blank">About Greenline</a>
+          </li>
+          <li>
+            <a href="#" target="_blank">News</a>
+          </li>
+          <li>
+            <a href="#" target="_blank">Investors</a>
+          </li>
+          <li>
+            <a href="#" target="_blank">Careers</a>
+          </li>
+          <li>
+            <a href="#" target="_blank">Greenline Partner Solutions</a>
+          </li>
+          <li>
+            <a href="#" target="_blank">Terms & Conditions</a>
+          </li>
+          <li>
+            <a href="#" target="_blank">Privacy/Cookies</a>
+          </li>
+        </ul>
+        <!-- More hyperlinks -->
+        <ul>
+          <li>
+            <a href="#" target="_blank">Help & Useful Info</a>
+          </li>
+          <li>
+            <a href="#" target="_blank">Train & Bus companies</a>
+          </li>
+          <li>
+            <a href="#" target="_blank">Train Journeys in the UK</a>
+          </li>
+          <li>
+            <a href="#" target="_blank">Top Destinations</a>
+          </li>
+          <li>
+            <a href="#" target="_blank">Stations</a>
+          </li>
+        </ul>
+      </div>
+      <!-- Copyright, T&C and Privacy Policy -->
+      <div style="display: flex; justify-content: space-between">
+        <p>Copyright &copy; 2021 greenline.com Limited. All rights reserved</p>
+        <p><a href="#" target="_blank">Terms & Conditions</a></p>
+        <p><a href="#" target="_blank">Privacy Policy</a></p>
+      </div>
+    </footer>
+  </body>
+</html>

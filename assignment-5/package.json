@@ -1,0 +1,23 @@
+{
+  "name": "assignment-5-sydrawat01",
+  "version": "1.0.0",
+  "description": "Assignnment 5 INFO6150",
+  "main": "node.js",
+  "scripts": {
+    "start": "node node.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/neu-mis-info6150-spring-2022/assignment-5-sydrawat01.git"
+  },
+  "keywords": [
+    "JS",
+    "Arrays"
+  ],
+  "author": "Siddharth Rawat <siddharth.rawat94@gmail.com>",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/neu-mis-info6150-spring-2022/assignment-5-sydrawat01/issues"
+  },
+  "homepage": "https://github.com/neu-mis-info6150-spring-2022/assignment-5-sydrawat01#readme"
+}

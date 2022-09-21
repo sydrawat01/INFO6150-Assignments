@@ -1,0 +1,45 @@
+div.ItemContainer{
+  margin: 10px auto;
+  width: 40%;
+  background: #f7f5ef;
+  padding:25px;
+  color: black;
+  text-shadow: #303030;
+  border-radius: 12px 12px;
+  border-bottom: 1px #ccc dotted;
+}
+
+div.ItemContainer:hover{
+  background: #f7f0dc;
+  padding:25px;
+  color: rgb(32, 32, 32);
+  // transition: all ease-in-out 0.2s;
+
+}
+#Selected{
+  background: #f7f5ef;
+  padding:25px;
+  color: black;
+  // transition: all ease-in-out 0.2s;
+}
+
+div.ItemContainer .text-strike{
+  text-decoration: line-through;
+  // transition: all ease-in-out 0.2s;
+
+}
+
+button{
+  background-color: #f5ebcf;
+  margin: 0px 0px 0px 5.5px;
+  padding: 5px 10px;
+  border-radius: 50%;
+  cursor: pointer;
+  float: right;
+  font-size: 14px;
+  // transition: all ease-in-out 0.2s;
+}
+
+button:hover{
+  background-color: #efdeae;
+}

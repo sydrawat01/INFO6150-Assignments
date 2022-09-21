@@ -1,0 +1,57 @@
+// Using the @forward rules using the @use rule
+@use './forward';
+
+* {
+  font-family: $family;
+}
+
+body {
+  // @include to use the rule from the _forward scss file which has the @mixin
+  @include forward.reset-padding-margin;
+}
+
+// Base styles for major elements in the App
+
+input {
+  border: none;
+  border-radius: 7px;
+  background-color: $app-grey;
+  padding: 10px;
+  margin: 5px;
+}
+
+select {
+  border: none;
+  background-color: transparent;
+  font-size: $para;
+  padding: 0 10px;
+  cursor: pointer;
+
+  // Hover pseudo-selector for drop-downs
+  &:hover {
+    color: $link-hover;
+  }
+}
+
+li,
+a {
+  text-decoration: none;
+  color: $app-black;
+
+  // Hover pseudo-selector for links
+  &:hover {
+    color: $link-hover;
+  }
+}
+
+// Default button styles for the App
+button {
+  margin-left: 20px;
+  padding: 9px 25px;
+  font-size: $default;
+  background-color: $app-blue;
+  color: $app-white;
+  border: none;
+  border-radius: 50px;
+  cursor: pointer;
+}

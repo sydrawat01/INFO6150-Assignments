@@ -1,0 +1,22 @@
+// Using the forward at-rule
+@forward './forward';
+
+// Using the built-in default sass modules
+@use 'sass:math';
+
+// Base requirements
+@import './variables';
+@import './mixin';
+@import './functions';
+@import './layout';
+
+// Components of the webpage
+@import './components/nav';
+@import './components/hero.scss';
+@import './components/carousel.scss';
+@import './components/help.scss';
+@import './components/appstore.scss';
+@import './components/footer.scss';
+
+// External fonts
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@100;400;700&display=swap');

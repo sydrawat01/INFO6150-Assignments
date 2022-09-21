@@ -1,0 +1,89 @@
+/* CSS file for Carouse 1 and Carousel 2 */
+
+/* Carousel 1 styles for ticekts to various destinations */
+.carousel-1 {
+  margin-top: 550px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+/* Flex container for image of carousel item */
+.carousel-tickets figure {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  align-items: center;
+}
+
+/*  Carousel hyperlink styles */
+.carousel-tickets figure a {
+  border: 1px solid lightgray;
+  padding: 10px;
+  border-radius: 20px 20px;
+  box-shadow: 0 0 0 2px rgba(0, 0, 0, 0.5);
+  background-color: white;
+}
+
+/* Ticket price style */
+.carousel-tickets figure a p {
+  color: #00a88f;
+}
+
+/* Destination Rating */
+.rating {
+  padding: 5px;
+  background-color: blue;
+  color: white;
+}
+
+/* Destination reviews */
+.reviews {
+  color: gray;
+}
+
+/* Carousel controls for navigating the carousel */
+.carousel-controls {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+}
+
+.carousel-controls button {
+  border-radius: 50% 50%;
+  padding: 10px;
+  margin: 5px;
+}
+
+/* View all tickets button container */
+.view-all-btn {
+  margin: 3px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.view-all-btn button {
+  width: 150px;
+  height: 50px;
+  font-size: 1.2rem;
+}
+
+/* Carousel 2 for Greenline offered services */
+.carousel-2 {
+  margin: 50px;
+  background-color: lightgrey;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+}
+
+/* Button for carouse 2 right arrow */
+.carousel-2 button {
+  border-radius: 50% 50%;
+  height: 50px;
+  width: 50px;
+  margin-top: 40px;
+}

@@ -1,0 +1,172 @@
+/* Carousel 1 styles for ticekts to various destinations */
+.carousel-1 {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  // Using built-in math module
+  padding: 20px math.percentage(0.05);
+}
+
+/* Flex container for image of carousel item */
+.carousel-tickets figure {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  align-items: center;
+
+  /*  Carousel hyperlink styles */
+  a {
+    border: 1px solid $app-grey;
+    padding: 20px math.percentage(0.02);
+    margin: 20px;
+    border-radius: 20px 20px;
+    // Using mixin to set box-shadow
+    @include shadow($black-shadow);
+    background-color: $app-white;
+
+    /* Ticket price style */
+    p {
+      font-weight: $bold;
+      color: $app-green;
+      font-size: $para;
+    }
+
+    h4 {
+      color: $app-dark-grey;
+      font-weight: $bold;
+      font-size: $big;
+      display: flex;
+      align-content: center;
+      align-items: center;
+      justify-content: space-around;
+    }
+  }
+}
+
+/* Destination Rating */
+.rating {
+  padding: 8px;
+  background-color: $app-blue;
+  color: $app-white;
+  // Using built-in math module
+  border-radius: math.percentage(0.2);
+  font-size: $small;
+}
+
+/* Destination reviews */
+.reviews {
+  color: $app-dark-grey;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+  font-size: $small;
+  justify-content: space-around;
+}
+
+/* Carousel controls for navigating the carousel */
+.carousel-controls {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+
+  button {
+    // Using built-in math module
+    border-radius: math.percentage(0.5) math.percentage(0.5);
+    padding: 10px;
+    margin: 5px;
+
+    &:nth-child(2n + 1) {
+      background-color: $app-light-blue;
+    }
+  }
+}
+
+/* View all tickets button container */
+.view-all-btn {
+  margin: 3px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+
+  .view-btn {
+    margin-top: 15px;
+    width: 350px;
+    height: 50px;
+    font-weight: $bold;
+    font-size: $big;
+  }
+}
+
+/* Carousel 2 for Greenline offered services */
+.carousel-2 {
+  background-color: $app-grey;
+  padding: 20px;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-around;
+
+  figure {
+    padding: 20px 40px;
+    margin: 10px 10px;
+    // Using mixin to set box-shadow
+    @include shadow($black-shadow);
+    background-color: $app-white;
+    // Using built-in math module
+    border-radius: math.percentage(0.08);
+    width: 140px;
+    height: 170px;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: flex-start;
+
+    img {
+      width: 20px;
+      height: 20px;
+      background-color: $app-light-green;
+      padding: 7px;
+      // Using built-in math module
+      border-radius: math.percentage(math.div(1, 2));
+    }
+
+    .carousel-icons {
+      color: $app-green;
+      padding: 4px;
+      background-color: $app-light-green;
+      // Using built-in math module
+      border-radius: math.percentage(math.div(1, 2));
+      top: math.percentage(math.div(1, 2));
+      left: math.percentage(math.div(1, 2));
+    }
+
+    figcaption {
+      font-weight: $bold;
+      font-size: $caption;
+      padding-top: 10px;
+    }
+
+    p {
+      padding-top: 5px;
+      font-weight: $thin;
+      font-size: $small + 0.1rem; //0.9rem
+      color: $app-dark-grey;
+    }
+  }
+
+  /* Button for carousel 2 right arrow */
+  .next-arrow {
+    // Using built-in math module
+    border-radius: math.percentage(math.div(1, 2));
+    height: 50px;
+    width: 50px;
+    margin-left: -70px;
+    .material-icons {
+      margin-left: -26px;
+      margin-top: -11px;
+      font-size: $heading + $small;
+    }
+  }
+}

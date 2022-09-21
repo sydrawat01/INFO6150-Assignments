@@ -1,0 +1,10 @@
+// Using custom power function to return $base ^ $exponent
+// Used @for flow-control construct
+
+@function pow($base, $exponent) {
+  $result: 1;
+  @for $_ from 1 through $exponent {
+    $result: $result * $base;
+  }
+  @return $result;
+}

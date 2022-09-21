@@ -1,0 +1,56 @@
+.container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+
+  #btn-new-todo {
+    margin-left: 50px;
+  }
+
+  .add-item {
+    padding: 10px;
+    margin-left: 35px;
+    width: 50%;
+    background-color: $app-grey;
+    border-radius: 12px 12px;
+    @include shadow($black-shadow);
+
+    .details {
+      display: flex;
+      flex-direction: row;
+      align-items: center;
+      justify-content: space-between;
+
+      .error {
+        border: 2px solid $app-red;
+      }
+
+      label,
+      input {
+        padding: 10px 2%;
+        margin: 10px;
+        width: 100%;
+      }
+
+      > label {
+        font-size: $regular;
+      }
+
+      > input {
+        border: 1px solid $app-grey;
+        background-color: $app-white;
+        border-radius: 12px 12px;
+        @include shadow($black-shadow);
+      }
+
+      &-btn {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: center;
+        margin-top: 10px;
+      }
+    }
+  }
+}
